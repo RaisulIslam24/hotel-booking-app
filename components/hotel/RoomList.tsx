@@ -58,7 +58,7 @@ const RoomCard = ({ room }: { room: Room }) => {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={8} style={{ background: '#fafafa', borderTop: '1px solid #f0f0f0', md: { borderTop: 'none', borderLeft: '1px solid #f0f0f0'} }}>
+                <Col xs={24} md={8} style={{ background: '#fafafa', borderTop: '1px solid #f0f0f0', borderLeft: '1px solid #f0f0f0' }}>
                     <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'space-between' }}>
                         <Row justify="space-between" align="top">
                             <Col>
