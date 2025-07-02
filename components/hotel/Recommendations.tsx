@@ -9,8 +9,8 @@ import type { Recommendation } from '@/lib/types';
 
 const { Title, Text } = Typography;
 
-const chunkArray = (array: any[], size: number) => {
-    const chunked_arr = [];
+const chunkArray = <T,>(array: T[], size: number): T[][]  => {
+    const chunked_arr: T[][]  = [];
     let index = 0;
     while (index < array.length) {
         chunked_arr.push(array.slice(index, size + index));

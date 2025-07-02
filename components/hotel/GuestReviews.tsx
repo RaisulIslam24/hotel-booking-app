@@ -5,8 +5,9 @@ import { Carousel, Card, Typography, Rate, Row, Col } from 'antd';
 import { reviewsData } from '@/lib/data';
 import type { Review } from '@/lib/types';
 
-const chunkArray = (array: any[], size: number) => {
-    const chunked_arr = [];
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const chunkArray = <T,>(array: T[], size: number): T[][] => {
+    const chunked_arr: T[][] = [];
     let index = 0;
     while (index < array.length) {
         chunked_arr.push(array.slice(index, size + index));
@@ -50,7 +51,6 @@ const GuestReviews = () => {
                         <div key={index}>
                             <Row gutter={16}>
                                 <Col span={12}>
-                                    {/* Ensure we don't render a column if the pair is incomplete */}
                                     {reviewPair[0] && <ReviewCard review={reviewPair[0]} />}
                                 </Col>
                                 <Col span={12}>

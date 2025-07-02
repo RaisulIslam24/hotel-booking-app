@@ -22,7 +22,7 @@ const AppFooter = () => {
           <Col xs={24} sm={12} md={12}>
             <Image src="/images/logo.png" alt="DAYF Booking Logo" width={120} height={50} style={{ filter: 'brightness(0) invert(1)', marginBottom: 16 }} />
             <Text style={{ color: 'white', display: 'block', marginBottom: 16 }}>
-              [App Name] makes booking your next stay easy, affordable, and stress-free. With thousands of hotels worldwide, we're here to help you find the perfect place to stay.
+              [App Name] makes booking your next stay easy, affordable, and stress-free. With thousands of hotels worldwide, we&apos;re here to help you find the perfect place to stay.
             </Text>
             <Space size="middle">
               <AntLink href="#" target="_blank" style={{ color: 'white', fontSize: '24px' }}><TwitterOutlined /></AntLink>

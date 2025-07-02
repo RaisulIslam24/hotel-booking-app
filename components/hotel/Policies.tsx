@@ -5,7 +5,6 @@ import { Card, Typography, Divider, Space, Col, Row } from 'antd';
 
 const { Title, Text, Link } = Typography;
 
-// A reusable component for each policy line item
 const PolicyItem = ({ title, children }: { title: string, children: React.ReactNode }) => (
     <div>
         <Row>
@@ -32,7 +31,7 @@ const Policies = () => {
                     <Text>Available 24 hours</Text>
                     <br/>
                     <Text type="secondary" style={{ fontSize: '12px' }}>
-                        Guests are required to show a photo identification and credit card upon check-in. Please let the property know in advance what time you'll arrive.
+                        Guests are required to show a photo identification and credit card upon check-in. Please let the property know in advance what time you&apos;ll arrive.
                     </Text>
                 </PolicyItem>
                 
